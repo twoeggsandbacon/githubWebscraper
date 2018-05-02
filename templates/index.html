@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{language}} Trending Repositories Web App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/webscraper.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <nav>
+        <ul class="nav nav-pills center-pills">
+          <li role="presentation" class="active">
+            <a href="/">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="jumbotron">
+      <h1>Popular {{language}} Repositories</h1>
+      <h3>Choose Your Language</h3>
+      <ul class='btn-group btn-group-justified'>
+        <li class='btn btn-primary'><a href="/python">Python</a></li>
+        <li class='btn btn-primary'><a href="/go">Go</a></li>
+        <li class='btn btn-primary'><a href="/rust">Rust</a></li>
+        <li class='btn btn-primary'><a href="/javascript">JavaScript</a></li>
+        <li class='btn btn-primary'><a href="/java">Java</a></li>
+        <li class='btn btn-primary'><a href="/C">C</a></li>
+        <li class='btn btn-primary'><a href="/sql">SQL</a></li>
+        <li class='btn btn-primary'><a href="/ruby">Ruby</a></li>
+        <li class='btn btn-primary'><a href="/php">PHP</a></li>
+        <li class='btn btn-primary'><a href="/csharp">C sharp</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='container'>
+    <ul class='projectlist'>
+      {% for project in projectDescriptions %}
+        <li><h3>{{project.h3.text}}</h3>
+        <p>{{project.p.text}}</p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>

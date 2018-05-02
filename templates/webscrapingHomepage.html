@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GitHub Trending Topics Web Scraper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='styles/webscraper.css')}}">
+  <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+</head>
+
+<body>
+<div class="container">
+  <div class="jumbotron">
+      <h1>GitHub Trending Repositories</h1>
+      <img src='{{url_for('static', filename='octocatFromOctodex.png')}}'
+      alt='this is an ocotocat' height='400px' width='400px'>
+  <h3>Choose Your Language</h3>
+  <ul class='btn-group btn-group-justified'>
+    <li class='btn btn-primary'><a href="/python">Python</a></li>
+    <li class='btn btn-primary'><a href="/go">Go</a></li>
+    <li class='btn btn-primary'><a href="/rust">Rust</a></li>
+    <li class='btn btn-primary'><a href="/javascript">JavaScript</a></li>
+    <li class='btn btn-primary'><a href="/java">Java</a></li>
+    <li class='btn btn-primary'><a href="/C">C</a></li>
+    <li class='btn btn-primary'><a href="/sql">SQL</a></li>
+    <li class='btn btn-primary'><a href="/ruby">Ruby</a></li>
+    <li class='btn btn-primary'><a href="/php">PHP</a></li>
+    <li class='btn btn-primary'><a href="/csharp">C sharp</a></li>
+  </ul>
+</div>
+</body>
+</html>

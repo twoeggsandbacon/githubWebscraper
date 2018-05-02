@@ -1,0 +1,37 @@
+body {
+    background-color: #036635;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #F3E4CD;
+  color: #036635;
+  font-family: 'Archivo Black';
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #036635;
+  border-color: #036635;
+}
+
+h3 {
+  margin: 20px;
+}
+
+.projectlist {
+  background-color: #F3E4CD;
+  text-align: center;
+  color: #036635;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px;
+}
+
+ul {
+  list-style-type: none;
+}
